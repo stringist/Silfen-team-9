@@ -30,6 +30,7 @@ ul {
 footer {
     color: #ffffff;
     background-color: var(--lightblue);
+    font-weight: 100;
 }
 
 
@@ -67,6 +68,11 @@ header {} */
     display: flex;
     max-width: 200px;
 }
+
+
+/* .footer-inner {
+    flex
+} */
 
 
 /* svg {
