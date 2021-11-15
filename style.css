@@ -31,6 +31,8 @@ footer {
     color: #ffffff;
     background-color: var(--lightblue);
     font-weight: 100;
+    position: fixed;
+    bottom: 0px;
 }
 
 
