@@ -1,8 +1,8 @@
 @font-face {
     font-family: "manrope";
-    src: url("./fonts/manrope/fonts/ttf/") format("truetype");
-    src: url("./fonts/manrope/fonts/web/") format("woff");
-    src: url("./fonts/manrope/fonts/otf/") format("opentype");
+    src: url("./fonts/manrope/fonts/ttf/Manrope-Regular.ttf") format("truetype");
+    src: url("./fonts/manrope/fonts/web/Manrope-Regular.woff") format("woff");
+    src: url("./fonts/manrope/fonts/otf/Manrope-Regular.otf") format("opentype");
 }
 
 :root {
@@ -16,11 +16,14 @@
 
 body {
     margin: 0;
+    font-family: "manrope";
+    font-weight: lighter;
 }
 
 ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
 }
 
 
@@ -34,14 +37,14 @@ ul {
     padding: 0 2vw 0 2vw;
 }
 
-.headerWrapper,
-.buttonWrapper {
+.headerWrapper {
     display: flex;
+    justify-content: space-around;
 }
 
 .headerWrapper {
-    justify-content: space-around;
-    margin-bottom: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    margin-bottom: 0;
 }
 
 .logo {
@@ -52,6 +55,7 @@ ul {
 }
 
 .buttonWrapper {
+    display: flex;
     max-width: 200px;
 }
 
