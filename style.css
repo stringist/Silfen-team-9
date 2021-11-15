@@ -1,8 +1,13 @@
-/* @font-face  */
+@font-face {
+    font-family: "manrope";
+    src: url("./fonts/manrope/fonts/ttf/") format("truetype");
+    src: url("./fonts/manrope/fonts/web/") format("woff");
+    src: url("./fonts/manrope/fonts/otf/") format("opentype");
+}
 
 :root {
     --lightblue: #8fb3d4;
-    --bodyText:
+    --bodyText: "manrope";
 }
 
 * {
