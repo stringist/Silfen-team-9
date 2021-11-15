@@ -69,6 +69,11 @@ header {} */
     max-width: 200px;
 }
 
+.footer-inner {
+    columns: 3;
+    margin-left: 15%
+}
+
 
 /* .footer-inner {
     flex
