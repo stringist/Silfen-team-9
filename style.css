@@ -6,6 +6,48 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+
+/* header {} */
+
 .blueWrapper {
     background-color: var(--lightblue);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw 0 2vw;
+}
+
+.headerWrapper,
+.buttonWrapper {
+    display: flex;
+}
+
+.headerWrapper {
+    justify-content: space-around;
+    margin-bottom: solid 1px lightgrey;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    margin: 15px auto 15px auto;
+}
+
+.buttonWrapper {
+    max-width: 200px;
+}
+
+svg {
+    width: 17px;
+    height: 17px;
 }
