@@ -1,7 +1,66 @@
+@font-face {
+    font-family: "manrope";
+    src: url("./fonts/manrope/fonts/ttf/Manrope-Regular.ttf") format("truetype");
+    src: url("./fonts/manrope/fonts/web/Manrope-Regular.woff") format("woff");
+    src: url("./fonts/manrope/fonts/otf/Manrope-Regular.otf") format("opentype");
+}
+
 :root {
     --lightblue: #8fb3d4;
+    --bodyText: "manrope";
 }
 
 * {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: "manrope";
+    font-weight: lighter;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* header {} */
+
+.blueWrapper {
+    background-color: var(--lightblue);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw 0 2vw;
+}
+
+.headerWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerWrapper {
+    border-bottom: solid 1px lightgrey;
+    margin-bottom: 0;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    margin: 15px auto 15px auto;
+}
+
+.buttonWrapper {
+    display: flex;
+    max-width: 200px;
+}
+
+
+/* svg {
+    width: 17px;
+    height: 17px;
+} */
