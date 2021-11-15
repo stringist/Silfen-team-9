@@ -27,6 +27,11 @@ ul {
     justify-content: space-between;
 }
 
+footer {
+    color: #ffffff;
+    background-color: var(--lightblue);
+}
+
 
 /* ul li {}
 
