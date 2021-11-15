@@ -5,3 +5,7 @@
 * {
     box-sizing: border-box;
 }
+
+.blueWrapper {
+    background-color: var(--lightblue);
+}
