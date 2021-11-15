@@ -1,5 +1,8 @@
+/* @font-face  */
+
 :root {
     --lightblue: #8fb3d4;
+    --bodyText:
 }
 
 * {
@@ -47,7 +50,8 @@ ul {
     max-width: 200px;
 }
 
-svg {
+
+/* svg {
     width: 17px;
     height: 17px;
-}
+} */
