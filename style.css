@@ -27,12 +27,21 @@ ul {
     justify-content: space-between;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 footer {
     color: #ffffff;
     background-color: var(--lightblue);
     font-weight: 100;
-    position: fixed;
-    bottom: 0px;
+    /* position: fixed;
+    bottom: 0px; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5rem 5% 1rem 5%;
+    /* width: 100vw; */
 }
 
 
@@ -72,9 +81,13 @@ header {} */
 }
 
 .footer-inner {
-    columns: 3;
-    margin-left: 15%
+    grid-column: 1/6;
 }
+
+
+/* .two-fifth {
+    grid-column: 1/2;
+} */
 
 
 /* .footer-inner {
