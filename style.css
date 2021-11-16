@@ -88,7 +88,9 @@ header {} */
 .wrapper-upper-footer {
     grid-column: 1/6;
     display: grid;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 3rem;
 }
 
 .block-1 {
@@ -112,6 +114,30 @@ header {} */
     display: flex;
     flex-direction: column;
     padding-left: 0;
+}
+
+.footer-bottom-wrapper {
+    grid-column: 1/6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.long p {
+    display: inline;
+    margin-right: 1vw;
+}
+
+.payment-methods {
+    margin-bottom: -10px;
+}
+
+.right-side {
+    text-align: right;
+}
+
+.right-side img {
+    width: 150px;
+    height: auto;
 }
 
 
