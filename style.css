@@ -5,6 +5,11 @@
     src: url("./fonts/manrope/fonts/otf/Manrope-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "inter";
+    src: url("./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype")
+}
+
 :root {
     /* --lightblue: #8fb3d4; */
     --lightblue: #7BAFD4;
@@ -17,7 +22,8 @@
 
 body {
     margin: 0;
-    font-family: "manrope";
+    /* font-family: "manrope"; */
+    font-family: "inter";
     font-weight: lighter;
 }
 
