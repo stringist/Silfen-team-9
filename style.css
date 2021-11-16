@@ -10,10 +10,21 @@
     src: url("./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype")
 }
 
+@font-face {
+    font-family: "roboto";
+    src: url("./fonts/Roboto/Roboto-Black.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
 :root {
     /* --lightblue: #8fb3d4; */
     --lightblue: #7BAFD4;
-    --bodyText: "manrope";
+    /* --bodyText: "manrope"; */
+    --headerText: "roboto";
 }
 
 * {
@@ -23,7 +34,7 @@
 body {
     margin: 0;
     /* font-family: "manrope"; */
-    font-family: "inter";
+    font-family: "inter", "roboto", sans-serif;
     font-weight: lighter;
 }
 
