@@ -117,6 +117,25 @@ footer {
     margin-right: 2vw;
 }
 
+div.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    row-gap: 10vw;
+    column-gap: 4vw;
+    margin: 5% 2% 0 2%;
+}
+
+article {
+    outline: solid 1px pink;
+    max-width: 300px;
+}
+
+article img {
+    max-width: 300px;
+    height: auto;
+}
+
 svg {
     fill: rgb(32, 32, 32);
 }
