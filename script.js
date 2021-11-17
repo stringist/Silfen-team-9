@@ -18,8 +18,10 @@ closeMenu();
 
 const urlParams = new URLSearchParams(window.location.search);
 const productName = urlParams.get("title.rendered");
-const endpoint = "https://lumensity.dk/recreate/wp-json/wp/v2/bike?_embed"
+const endpoint = "https://bymabe.dk/silfen-data/wp-json/wp/v2/bag?_embed"
 
+// old url for reference
+//  "https://lumensity.dk/recreate/wp-json/wp/v2/bike?_embed"
 
 fetch(endpoint)
 
