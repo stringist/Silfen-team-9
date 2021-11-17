@@ -73,7 +73,8 @@ footer {
 }
 
 .headerWrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
     justify-content: space-between;
     height: 4rem;
     border-bottom: solid 1px lightgrey;
@@ -81,31 +82,31 @@ footer {
 
 .navWrapper {
     font-weight: 300;
-    border: solid blue 1px;
 }
 
 .navWrapper ul {
     gap: 1.5vw;
-    /* margin-right: -5vw; */
 }
 
 .logo {
     max-width: 250px;
     min-width: 100px;
-    width: 100%;
-    height: auto;
-    margin: auto;
-    border: solid pink 1px;
 }
 
 .logo-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     align-self: center;
 }
 
 .buttonWrapper {
     display: flex;
-    justify-content: space-between;
+    text-align: right;
+    justify-content: right;
     max-width: 200px;
+    margin-left: auto;
+    margin-right: 2vw;
 }
 
 svg {
