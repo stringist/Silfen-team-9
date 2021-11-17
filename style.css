@@ -83,6 +83,7 @@ footer {
 .navWrapper {
     font-weight: 300;
     margin: auto;
+    margin-left: 1vw;
 }
 
 .navWrapper ul {
