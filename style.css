@@ -223,6 +223,11 @@ header {} */
     
 }
 
+.items li {
+    margin: 10px;
+    
+}
+
 .title_color{
     display: flex;
     flex-direction: row;
@@ -253,6 +258,37 @@ header {} */
 }
 
 
+.checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox > span {
+    color: #34495E;
+    padding: 0.5rem 0.25rem;
+}
+
+.checkbox > input {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid black;
+
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+
+.checkbox > input:checked {
+    border: 1px solid black;
+    background-color: #34495E;
+}
+
 
 .plus_sign {
     margin-top: 8px;
@@ -272,3 +308,26 @@ header {} */
 
 
 /* category page end */
+
+
+.footer {
+    clear: both;
+    position: relative;
+    height: 600px;
+}
+
+
+/* page with the items to sell start */
+
+.items_to_show {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* page with the items to sell end */
+
+
+/* .main {
+    justify-content:space-between;
+} */
+
