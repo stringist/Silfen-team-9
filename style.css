@@ -105,7 +105,12 @@ header {} */
 
 .buttonWrapper {
     display: flex;
+    justify-content: space-between;
     max-width: 200px;
+}
+
+svg {
+    fill: rgb(32, 32, 32);
 }
 
 .wrapper-upper-footer {
