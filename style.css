@@ -197,3 +197,78 @@ header {} */
     height: auto;
     margin-top: -5rem;
 }
+
+
+/* category page start */
+
+.main{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.entire_catogry_group {
+    background-color: #F5F5F5;
+}
+
+
+.entire_catogry_group:first-child{
+    width: 21%;
+}
+
+
+.items {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title_color{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.title_color li{
+ font-size: 26px;
+}
+
+.title_color > * {
+    flex:  0 0 auto;
+    width: 200px;
+}
+
+.color-page {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100;
+}
+
+.price-page {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100;
+}
+
+.hidden {
+ display: none;
+}
+
+
+
+.plus_sign {
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-image: url("/Images/plus_line.svg");
+}
+
+.minus_sign {  
+    margin-top: 8px;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-image: url("/Images/minus.png");
+}
+
+
+/* category page end */
