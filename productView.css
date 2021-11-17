@@ -1,0 +1,68 @@
+/* this is the product inforamtion start */
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* main:first-child {
+    width: 70%;
+} */
+
+
+
+/* this is the product inforamtion start */
+h1 {
+    margin: 0px;
+    margin-top: 20%;
+    font-size: 50px ;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 100;
+}
+
+.name_with_color_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.color-circle {
+    display: block;
+    height: 30px;
+    border-radius: 100%;
+    background-color: tomato;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_to_cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10%;
+}
+
+.add_to_wishlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.add_to_wishlist_with_p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* this is the product inforamtion end */
