@@ -5,9 +5,26 @@
     src: url("./fonts/manrope/fonts/otf/Manrope-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "inter";
+    src: url("./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("./fonts/Roboto/Roboto-Black.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-BlackItalic.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-BoldItalic.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-Italic.ttf") format("truetype");
+    src: url("./fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
 :root {
-    --lightblue: #8fb3d4;
-    --bodyText: "manrope";
+    /* --lightblue: #8fb3d4; */
+    --lightblue: #7BAFD4;
+    /* --bodyText: "manrope"; */
+    --headerText: "roboto";
 }
 
 * {
@@ -16,15 +33,35 @@
 
 body {
     margin: 0;
-    font-family: "manrope";
-    font-weight: lighter;
+    /* font-family: "manrope"; */
+    font-family: "inter", "roboto", sans-serif;
+    font-weight: 200;
 }
 
 ul {
     list-style: none;
     display: flex;
-    gap: 15px;
     justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* footer is sometimes not sticking to bottom of page and I don't know why, added fixed position for now */
+
+footer {
+    color: #ffffff;
+    background-color: var(--lightblue);
+    font-weight: 100;
+    position: fixed;
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5rem 5% 1rem 5%;
+    /* width: 100vw; */
 }
 
 
@@ -34,6 +71,7 @@ header {} */
 
 .blueWrapper {
     background-color: var(--lightblue);
+    font-size: .8rem;
     color: #ffffff;
     display: flex;
     justify-content: space-between;
@@ -42,12 +80,17 @@ header {} */
 
 .headerWrapper {
     display: flex;
-    justify-content: space-around;
     height: 4rem;
+    border-bottom: solid 1px lightgrey;
 }
 
-.headerWrapper {
-    border-bottom: solid 1px lightgrey;
+.navWrapper {
+    font-weight: 300;
+}
+
+.navWrapper ul {
+    gap: 1.8vw;
+    margin-right: -5vw;
 }
 
 .logo {
@@ -55,7 +98,10 @@ header {} */
     min-width: 100px;
     width: 100%;
     height: auto;
-    margin: 15px auto 15px auto;
+    margin: auto;
+    align-self: center;
+    text-align: center;
+    ;
 }
 
 .buttonWrapper {
@@ -63,8 +109,91 @@ header {} */
     max-width: 200px;
 }
 
+.wrapper-upper-footer {
+    grid-column: 1/6;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 3rem;
+}
 
-/* svg {
-    width: 17px;
-    height: 17px;
-} */
+.widget-title {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "inter", "roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.block-1 {
+    grid-column: 1/3;
+    max-width: 70%;
+    line-height: 2rem;
+}
+
+.fake-form {
+    background-color: #6e91b1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
+    margin-top: 2rem;
+    border: solid 1px rgba(150, 150, 150, 0.653);
+}
+
+.fake-form>p {
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+
+.placeholder-text {
+    color: lightgrey;
+}
+
+.block-2 {
+    grid-column: 3/4;
+}
+
+.block-3 {
+    grid-column: 4/5;
+}
+
+.block-5 {
+    grid-column: 5/6;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.footer-list li {
+    margin-bottom: 1rem;
+}
+
+.footer-bottom-wrapper {
+    grid-column: 1/6;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.long p {
+    display: inline;
+    margin-right: 1vw;
+}
+
+.payment-methods {
+    margin-bottom: -10px;
+}
+
+.right-side {
+    line-height: .5rem;
+    margin-top: -2rem;
+}
+
+.right-side img {
+    width: 150px;
+    height: auto;
+    margin-top: -5rem;
+}
