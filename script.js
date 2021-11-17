@@ -17,7 +17,7 @@ closeMenu();
 // fetching from database
 
 const urlParams = new URLSearchParams(window.location.search);
-const bikename = urlParams.get("title.rendered");
+const productName = urlParams.get("title.rendered");
 const endpoint = "https://lumensity.dk/recreate/wp-json/wp/v2/bike?_embed"
 
 
@@ -34,27 +34,25 @@ function handleProductList(data) {
     console.log(data);
     data.forEach(showData);
 
-    function makeColorBox(colorList) {
+    function makeColorCircle(colorList) {
         console.log(colorList);
         colorList.forEach()
     }
 }
 
-function showData(oneBike) {
-    const template = document.querySelector("#bikeTemplate").content;
+function showData(oneBag) {
+    const template = document.querySelector("#productrow").content;
     const copy = template.cloneNode(true);
-    // const colors = oneBike.colors;
-    // const colorList = colors.split(",");
-    copy.querySelector("h3.brand").textContent = oneBike.brand;
-    copy.querySelector("h3.name").textContent = oneBike.title.rendered;
-    // copy.querySelector("img").setAttribute("src", oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
-    copy.querySelector("img").setAttribute("src", oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
-    // copy.querySelector("img").src = " oneBike._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url";
-    copy.querySelector(".price").textContent = oneBike.price;
-    // copy.querySelector(".color").textContent = oneBike.colors;
-    //copy.querySelector(".stock").textContent = oneBike.in_stock;
+    copy.querySelector("h3.brand").textContent = oneBag.brand;
+    copy.querySelector("h3.name").textContent = oneBag.title.rendered;
+    // copy.querySelector("img").setAttribute("src", oneBag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
+    copy.querySelector("img").setAttribute("src", oneBag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
+    // copy.querySelector("img").src = " oneBag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url";
+    copy.querySelector(".price").textContent = oneBag.price;
+    // copy.querySelector(".color").textContent = oneBag.colors;
+    //copy.querySelector(".stock").textContent = oneBag.in_stock;
 
-    const colors = oneBike.colors.split(',')
+    const colors = oneBag.colors.split(',')
     colors.forEach(color => {
         const li = document.createElement('li')
             // li.textContent = color;
@@ -62,8 +60,10 @@ function showData(oneBike) {
         copy.querySelector('.colorbox ul').appendChild(li)
     })
 
-    console.log(oneBike.in_stock);
-    if (oneBike.in_stock == '1') { copy.querySelector(".stock").textContent = "yes" }
-    const parent = document.querySelector("main");
-    parent.appendChild(copy);
+
+    // 
+    // console.log(oneBag.in_stock);
+    // if (oneBag.in_stock == '1') { copy.querySelector(".stock").textContent = "yes" }
+    // const parent = document.querySelector("main");
+    // parent.appendChild(copy);
 }
