@@ -45,27 +45,30 @@ function handleProductList(data) {
 function showData(oneBag) {
     const template = document.querySelector("#productrow").content;
     const copy = template.cloneNode(true);
-    copy.querySelector("h3.brand").textContent = oneBag.brand;
-    copy.querySelector("h3.name").textContent = oneBag.title.rendered;
+    copy.querySelector("h3.productname").textContent = oneBag.title.rendered;
+    copy.querySelector("h4.pricetag").textContent = oneBag.price;
     // copy.querySelector("img").setAttribute("src", oneBag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
     copy.querySelector("img").setAttribute("src", oneBag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url);
     // copy.querySelector("img").src = " oneBag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url";
-    copy.querySelector(".price").textContent = oneBag.price;
-    // copy.querySelector(".color").textContent = oneBag.colors;
+    // copy.querySelector(".price").textContent = oneBag.price;
+    // copy.querySelector(".colourtags").textContent = oneBag.colour;
     //copy.querySelector(".stock").textContent = oneBag.in_stock;
 
-    const colors = oneBag.colors.split(',')
-    colors.forEach(color => {
-        const li = document.createElement('li')
-            // li.textContent = color;
-        li.style.background = color
-        copy.querySelector('.colorbox ul').appendChild(li)
-    })
+    // const colours = oneBag.colours.split(',')
+
+
+    // making color blocks from list
+    // colors.forEach(color => {
+    //     const li = document.createElement('li')
+    //         // li.textContent = color;
+    //     li.style.background = colour
+    //     copy.querySelector('.colorbox ul').appendChild(li)
+    // })
 
 
     // 
     // console.log(oneBag.in_stock);
     // if (oneBag.in_stock == '1') { copy.querySelector(".stock").textContent = "yes" }
-    // const parent = document.querySelector("main");
-    // parent.appendChild(copy);
+    const parent = document.querySelector("main");
+    parent.appendChild(copy);
 }
