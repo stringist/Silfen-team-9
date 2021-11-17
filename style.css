@@ -117,13 +117,14 @@ footer {
     margin-right: 2vw;
 }
 
-div.product-gallery {
+main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* grid-template-columns: 1fr 1fr 1fr; */
     row-gap: 10vw;
     column-gap: 4vw;
     margin: 5% 2% 0 2%;
+    width: 100%;
 }
 
 article {
@@ -240,6 +241,7 @@ svg {
 
 .entire_catogry_group {
     background-color: #F5F5F5;
+    grid-column: 1/2;
 }
 
 .entire_catogry_group:first-child {
