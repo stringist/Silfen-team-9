@@ -124,10 +124,11 @@ main {
 }
 
 article {
-    border: solid 1px pink;
+    /* border: solid 1px pink; */
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
 }
 
 article img {
