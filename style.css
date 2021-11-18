@@ -144,7 +144,7 @@ svg {
     grid-column: 2/-1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 1rem;
+    column-gap: .5rem;
     row-gap: 3rem;
     margin-left: 5%;
     margin-right: 5%;
@@ -304,7 +304,7 @@ svg {
 
 .title_color>* {
     flex: 0 0 auto;
-    width: 200px;
+    width: 80%;
 }
 
 .hidden {
