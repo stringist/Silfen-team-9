@@ -69,6 +69,6 @@ function showData(oneBag) {
     // 
     // console.log(oneBag.in_stock);
     // if (oneBag.in_stock == '1') { copy.querySelector(".stock").textContent = "yes" }
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".product-gallery");
     parent.appendChild(copy);
 }
